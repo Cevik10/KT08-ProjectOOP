@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
 
         // Inheritance
-        val engelbert = SuperMusician("Engel Humperdinck", "Trumpet", 86)
+        val engelbert = SuperMusician("Engel H.", "Trumpet", 86)
 
         Log.d("system.out", engelbert.dance())
         Log.d("system.out", engelbert.singSong("opera"))
@@ -51,6 +51,16 @@ class MainActivity : AppCompatActivity() {
         // Dynamic Polymorphism (overriding)
 
 
+        // abstract class & interface
+        val testUser = User("Test", 14)
+        Log.d("system.out", testUser.giveInfo())
+        //val personTest = Person()  classifier 'Person' does not have a companion object
+
+        val myPiano = Piano()
+        myPiano.brand = "Yamaha"
+        myPiano.digital = true
+        myPiano.roomName
+        myPiano.info()
 
 
     }

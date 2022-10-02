@@ -2,7 +2,7 @@ package com.hakancevik.projectoop
 
 import android.util.Log
 
-class User {
+class User : Person {
 
     // Property
     var name: String? = null
