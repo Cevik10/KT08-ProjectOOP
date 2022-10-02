@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // constructor
         val myUser = User("Agent Smith", 41)
 
         Log.d("system.out", myUser.name.toString())
@@ -24,10 +25,19 @@ class MainActivity : AppCompatActivity() {
         Log.d("system.out", myUser.age.toString())
 
 
-        val frankSinetra = Musician("Frank Sinetra", "Guitar", 57)
-        frankSinetra.musicInstrument = "Piano"
-        Log.d("system.out", frankSinetra.singSong("opera"))
-        Log.d("system.out", frankSinetra.singSong("play"))
+        // encapsulation
+        val frankSinatra = Musician("Frank Sinatra", "Guitar", 57)
+        frankSinatra.musicInstrument = "Piano"
+        Log.d("system.out", frankSinatra.singSong("opera"))
+        Log.d("system.out", frankSinatra.singSong("play"))
+
+
+        // Inheritance
+        val engelbert = SuperMusician("Engel Humperdinck", "Trumpet", 86)
+
+        Log.d("system.out", engelbert.dance())
+        Log.d("system.out", engelbert.singSong("opera"))
+        Log.d("system.out", engelbert.name.toString())
 
 
     }

@@ -1,6 +1,6 @@
 package com.hakancevik.projectoop
 
-class Musician(name: String, musicInstrument: String, age: Int) {
+open class Musician(name: String, musicInstrument: String, age: Int) {
 
 
     // encapsulation
@@ -12,7 +12,6 @@ class Musician(name: String, musicInstrument: String, age: Int) {
     var musicInstrument: String? = musicInstrument
 
     private var age: Int? = age
-
 
     private val bandName: String = "Fly Me To The Moon"
 
