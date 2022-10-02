@@ -12,16 +12,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val user = User("Agent Smith", 41)
+        val myUser = User("Agent Smith", 41)
 
-        Log.d("system.out", user.name.toString())
-        Log.d("system.out", user.age.toString())
+        Log.d("system.out", myUser.name.toString())
+        Log.d("system.out", myUser.age.toString())
 
-        user.name = "James T. Kirk"
-        user.age = 35
+        myUser.name = "James T. Kirk"
+        myUser.age = 35
 
-        Log.d("system.out", user.name.toString())
-        Log.d("system.out", user.age.toString())
+        Log.d("system.out", myUser.name.toString())
+        Log.d("system.out", myUser.age.toString())
+
+
+        val frankSinetra = Musician("Frank Sinetra", "Guitar", 57)
+        frankSinetra.musicInstrument = "Piano"
+        Log.d("system.out", frankSinetra.singSong("opera"))
+        Log.d("system.out", frankSinetra.singSong("play"))
 
 
     }
