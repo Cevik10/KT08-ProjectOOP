@@ -40,6 +40,19 @@ class MainActivity : AppCompatActivity() {
         Log.d("system.out", engelbert.name.toString())
 
 
+        // Polymorphism
+
+        // Static Polymorphism (overloading)
+        val myMath = Mathematics()
+        Log.d("system.out", myMath.sum().toString())
+        Log.d("system.out", myMath.sum(17321, 2443).toString())
+        Log.d("system.out", myMath.sum(12354, 342, 46898).toString())
+
+        // Dynamic Polymorphism (overriding)
+
+
+
+
     }
 
 }
