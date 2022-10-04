@@ -63,6 +63,34 @@ class MainActivity : AppCompatActivity() {
         myPiano.info()
 
 
+        // Lambda expressions
+
+        val testString = { myString: String -> print(myString) }
+        print(testString("Agile10"))
+
+        val multiplyLambda = { a: Int, b: Int -> a * b }
+        print(multiplyLambda(34, 543))
+
+        val multiplyLambda2: (Int, Int) -> Int = { a, b -> a * b }
+        print(multiplyLambda2(34, 543))
+
+
+        // asynchronous
+        // callback function, listener function, completion function
+
+        fun downloadMusicians(url: String, completion: (Musician) -> Unit) {
+
+            val kirkHammett = Musician("Kirk", "Guitar", 57)
+            completion(kirkHammett)
+
+        }
+
+
+        downloadMusicians("metallica.com") { musician ->
+            print(musician.name)
+        }
+
+
     }
 
 }
